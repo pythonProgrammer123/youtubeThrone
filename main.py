@@ -26,7 +26,9 @@ while True:
     Tsubs = json.loads(Tdata)["items"][0]["statistics"]["subscriberCount"]
     if int(pewdsSubs) > int(Tsubs):
         print("We're okay!")
+        break
     elif int(Tsubs) > int(pewdsSubs):
         sendMessage("T-Series(@TSeries)---" + "{:,d}".format(int(Tsubs)) + "\nPewDiePie(@pewdiepie)---" + "{:,d}".format(int(pewdsSubs)) + "\nthis means that T-Series has officially dethroned PewDiePie and now is the most subscribed YouTube channel, rip PewDiePie")
         print("WE'RE NOT OKAY!")
         break
+sendMessage(pewdsSubs)
