@@ -3,11 +3,11 @@ import json
 import time
 import tweepy
 
-consumer_key = "iVJaO3fNsSn8ePU1jWQWpgwyh"
-consumer_secret = "COw8ZPBRjc7gMsupyu5AP0csYCcMeBoaC6ouGz7uYvlTk0Z0Bx"
-access_key = "805569973930205184-SRmHhyRz8chFbC4A4g5DbiSOijg6876"
-access_secret = "xT8YjbyCFlKIYTKlXqsh5nKEM2R8W8wOCGL7gJo3g97Hx"
-YouTubeKey = "AIzaSyAm_9jbzKZX6oBUu_xxmLo45Jv5-l4qjzY"
+consumer_key = ""
+consumer_secret = ""
+access_key = ""
+access_secret = ""
+YouTubeKey = ""
 
 def sendMessage(message):
     global consumer_key, consumer_secret, access_key, access_secret
@@ -15,7 +15,9 @@ def sendMessage(message):
     auth.set_access_token(access_key, access_secret)
     api = tweepy.API(auth)
     api.update_status(message)
-
+    
+sendMessage("We're online!")
+    
 #calculation began here
 while True:
     pewdsData = urllib.request.urlopen("https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=pewdiepie&key="+YouTubeKey).read()
