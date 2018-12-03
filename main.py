@@ -18,7 +18,7 @@ def sendMessage(message):
     api = tweepy.API(auth)
     api.update_status(message)
     
-sendMessage("We're online!")
+sendMessage("We're online! On Heroku!!")
     
 #calculation began here
 while True:
