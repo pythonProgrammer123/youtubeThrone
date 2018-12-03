@@ -34,4 +34,3 @@ while True:
         sendMessage("On this day, %d/%m/%y and at this time, %H:%M:%S, T-Series has successfully dethroned PewDiePie"))
         print("WE'RE NOT OKAY!")
         break
-sendMessage(pewdsSubs)
