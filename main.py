@@ -2,12 +2,13 @@ import urllib.request
 import json
 import time
 import tweepy
+import os
 
-consumer_key = ""
-consumer_secret = ""
-access_key = ""
-access_secret = ""
-YouTubeKey = ""
+consumer_key = os.environ.get("consumer_key")
+consumer_secret = os.environ.get("consumer_secret")
+access_key = os.environ.get("access_key")
+access_secret = os.environ.get("access_secret")
+YouTubeKey = os.environ.get("YouTubeKey")
 
 def sendMessage(message):
     global consumer_key, consumer_secret, access_key, access_secret
