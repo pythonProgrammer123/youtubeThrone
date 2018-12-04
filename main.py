@@ -30,7 +30,7 @@ while True:
         print("We're okay!")
         break
     elif int(Tsubs) > int(pewdsSubs):
-        sendMessage("T-Series(@TSeries)---" + "{:,d}".format(int(Tsubs)) + "\nPewDiePie(@pewdiepie)---" + "{:,d}".format(int(pewdsSubs)) + "\nthis means that T-Series has officially dethroned PewDiePie and now is the most subscribed YouTube channel, rip PewDiePie")
+        sendMessage("T-Series(@TSeries)---" + "{:,d}".format(int(Tsubs)) + "\nPewDiePie(@pewdiepie)---" + "{:,d}".format(int(pewdsSubs)) + "\nthis means that T-Series has officially dethroned PewDiePie and now is the most subscribed YouTube channel, rip PewDiePie @mal_izat(my owner)")
         sendMessage(datetime.datetime.now().strftime("On this day, %d/%m/%y and at this time, %H:%M:%S, T-Series has successfully dethroned PewDiePie"))
         print("WE'RE NOT OKAY!")
         break
