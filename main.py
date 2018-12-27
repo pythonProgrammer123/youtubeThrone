@@ -18,7 +18,7 @@ def sendMessage(message):
     api = tweepy.API(auth)
     api.update_status(message)
     
-sendMessage("We're online! On Heroku!!")
+sendMessage(datetime.datetime.now().strftime("We're online on Heroku!!!, %d/%m/%y , %H:%M:%S"))
     
 #calculation began here
 while True:
